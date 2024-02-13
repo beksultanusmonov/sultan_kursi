@@ -1,0 +1,133 @@
+/*! main section */
+.main{
+    min-height: 80vh;
+    padding: 10px 15px;
+    display: none;
+
+    &.active{
+        display: block;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .info h4{
+            font-size: 30px;
+            font-weight: 500;
+            color: var(--grey-color);
+            margin-bottom: 10px;
+        }
+
+        .info h2{
+            font-size: 43px;
+            font-weight: 600;
+            color: var(--green-color);
+        }
+
+        .info p{
+            font-size: 23px;
+            color: var(--dark-color);
+        }
+
+        .info button{
+            margin-top: 15px;
+        }
+
+        .image{
+            padding: 5px 10px;
+        }
+
+        .image img{
+            width: 98%;
+        }
+        
+    }
+}
+
+/*! modul section */
+.moduls{
+    margin-top: 50px;
+    display: none;
+
+    &.active{
+        display: block;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 10px 5px;
+
+        .cart{
+            background-color: var(--white-color);
+            border-radius: 15px;
+            text-align: center;
+            padding: 10px 5px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            // cursor: pointer;
+
+            &:hover{
+                transform: scale(1.02);
+            }
+        }
+
+        .cart .img{
+            max-width: 400px;
+            height: 250px;
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .cart h1{
+            font-weight: 500;
+            color: var(--dark-color);
+        }
+
+        .cart p{
+            font-size: 18px;
+            margin: 5px 0;
+            color: var(--dark-color);
+        }
+
+         
+    }
+}
+
+
+/*! contact section */
+.contact{
+    margin-top: 50px;
+    display: none;
+
+    &.active{
+        display: block;
+    }
+
+
+    .cart{
+        width: 300px;
+        background-color: var(--white-color);
+        border-radius: 15px;
+        min-height: 100px;
+        max-width: 100vw;
+        margin: 0 auto;
+        padding: 20px 10px;
+        
+        h1{
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+    }
+}

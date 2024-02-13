@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-Modul</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h2>Sultan Web</h2>
+                </a>
+            </div>
+
+            <div class="menu" id="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
+            <ul class="navbar" id="nav">
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                <div class="toggle">
+                    <button id="light" class="active"><i class="fa-solid fa-sun"></i></button>
+                    <button id="dark"><i class="fa-solid fa-moon"></i></button>
+                </div>
+            </ul>
+        
+        </div>
+    </header>
+    
+    <main class="all__main">
+        <div class="open__main">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div class="left">
+            <ul class="nav__main">
+                <a href="#" id="back__menu"><i class="fa-solid fa-xmark"></i></a>
+                <li class="active">Html</li>
+                <li>Atribute</li>
+                <li>Headings</li>
+                <li>style</li>
+                <li>input</li>
+                <li>Textarea</li>
+                <li>button</li>
+                <li>Form</li>
+                <li>Table</li>
+                <li>Lists</li>
+            </ul>
+        </div>
+        <div class="right">
+            <section class="informs active">
+                <h2 class="main__title">HTMLga kirish</h2>
+                <p class="main__desc"><span>!</span> Html bu buyruqlar toplami bo`lib u yordamida biz kampuyuterga web buyruqlarini berishimiz mumkin!</p>
+                <ol class="main__table">
+                    <li><p class="main__desc">Deklaratsiya <div class="necessary">!DOCTYPE html</div> - ushbu hujjat HTML5 hujjati ekanligini belgilaydi.</p></li>
+                    <li><p class="main__desc">Element <div class="necessary">html lang="en"</div> - bu htmlning ilidizi hisoblanib odatda uning tilini eng yani ingliz tili qilinadi.</p></li>
+                    <li><p class="main__desc">Element <div class="necessary">head</div> - bu htmlning boshi, u yerda unga kerak bo'ladigon linklar ulanadi, ismi qoyiladi.</p></li>
+                    <li><p class="main__desc">Element <div class="necessary">meta charset="UTF-8"</div> - bu kampuyuter va boshqa qurilmalar bilan piksellari togri kelishini taminlaydi.</p></li>
+                    <li><p class="main__desc">Element <div class="necessary">meta name="viewport" content="width=device-width, initial-scale=1.0"</div> - Bu element ham qurilmalarda birga bir korinishini taminlaydi.</p></li>
+                    <li><p class="main__desc">Element <div class="necessary">title</div> - Bu html faylning ismi bolib, u yerga nima web sayt haqida ekanligi yoziladi.</p></li>
+                    <li><p class="main__desc">Element <div class="necessary">body</div> - Bu htmlning tanasi bolib asosan shu joyda loyiha yaratiladi.</p></li>                    
+                    <li><p class="main__desc">Element <div class="necessary">h1</div> - Bu sarlavha bolib, mavzularni katta kichik qilib beradi.</p></li>                    
+                </ol>
+                <h2 class="main__title">Semantic Elements</h2>
+                <p class="main__desc"><span>!</span> Bu asosan kozi ojizlar va har xil kod tekshiruvchi botlar uchun yozilgan content qanday malumotga asoslangan ekanligi haqida aytib turadi.</p>
+                <div class="main__desc">Bularga misol qilib quyidagilarni korsatishimiz mumkin:</div>
+                <ol class="main__table">
+                    <li><p class="main__desc">header</p></li>
+                    <li><p class="main__desc">aside</p></li>
+                    <li><p class="main__desc">article</p></li>
+                    <li><p class="main__desc">details</p></li>
+                    <li><p class="main__desc">Figcaption</p></li>
+                    <li><p class="main__desc">figure</p></li>
+                    <li><p class="main__desc">footer</p></li>
+                    <li><p class="main__desc">main</p></li>
+                    <li><p class="main__desc">mark</p></li>
+                    <li><p class="main__desc">section</p></li>
+                    <img src="img/assasient/semantic el.png" alt="">
+                </ol>
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Atributelarga kirish!</h2>
+                <p class="main__desc"><span>!</span> Atributelar elementga osonlik beradi va ular yordamida boshqa sahifaga otish classlar berish va h.k lar qilish mumkin!</p>
+                <p class="main__desc block">Bular:</p>
+                <ol class="main__table">
+                    <li><p class="main__desc">lang</p></li>
+                    <li><p class="main__desc">class</p></li>
+                    <li><p class="main__desc">href</p></li>
+                    <li><p class="main__desc">id</p></li>
+                    <li><p class="main__desc">alt</p></li>
+                    <li><p class="main__desc">src</p></li>
+                    <li><p class="main__desc">style</p></li>
+                </ol>
+                <p class="main__desc block">Atributelar</p>
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Heading kirish!</h2>
+                <p class="main__desc"><span>!</span> Headinglar textlar, maqolalar, she'rlar va boshqa yozuvli matnlarga Sarlavha hisoblanadi.</p>
+                <p class="main__desc block">Bular:</p>
+                <ol class="main__table">
+                    <li><p class="main__desc">lang</p></li>
+                    <li><p class="main__desc">class</p></li>
+                    <li><p class="main__desc">href</p></li>
+                    <li><p class="main__desc">id</p></li>
+                    <li><p class="main__desc">alt</p></li>
+                    <li><p class="main__desc">src</p></li>
+                    <li><p class="main__desc">style</p></li>
+                </ol>
+                <p class="main__desc block">Atributelar</p>
+            </section>
+        </div>
+    </main>
+
+
+
+
+    <!-- js -->
+    <script src="script/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/*! media query */
+@media screen and (max-width: 992px){
+    .moduls .container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+    }
+
+    .all__main .open__main{
+        display: flex;
+    }
+
+    .all__main .left{
+        left: -300px;
+
+        &.active{
+            left: 0;
+        }
+
+        #back__menu{
+            display: block;
+        }
+    }
+
+    .left .nav__main{
+        margin-top: 40px;
+    }
+
+    .all__main .right{
+        width: 98vw;
+        margin: 0.5vh auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        max-width: 100%;
+        height: 100vh;
+        width: 300px;
+        background-color: var(--white-color);
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+
+        &.active{
+            right: 0;
+        }
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: var(--dark-color);
+        font-size: 25px;
+    }
+
+    
+
+    .header .container .menu{
+        display: flex;
+    }
+
+    .main .container{
+        grid-template-columns: repeat(1, 1fr);
+        
+        .info{
+            margin-bottom: 20px;
+        }
+
+        .image img{
+            width: 100%;
+        }
+    }
+
+    .moduls .container{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+
+        .cart{
+            padding: 10px 15px;
+            max-width: 90vw;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .header .container{
+        .logo h2{
+            font-size: 25px;
+        }
+
+        .menu{
+            padding: 4px 6px;
+            i{
+                font-size: 25px;
+            }
+        }
+    }
+
+    .main .container{
+        .info h4{
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+        
+        .info h2{
+            font-size: 30px;
+        }
+        
+        .info p{
+            font-size: 20px;
+        }
+    }
+
+    .moduls .container{
+        .cart{
+            max-width: 98vw;
+            padding: 10px 0;
+
+            .img{
+                max-height: 150px;
+            }
+        }
+    }
+}
