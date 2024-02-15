@@ -39,16 +39,17 @@
         <div class="left">
             <ul class="nav__main">
                 <a href="#" id="back__menu"><i class="fa-solid fa-xmark"></i></a>
+                <h3 class="modul__title">1-Modul</h3>
                 <li class="active">Html</li>
                 <li>Atribute</li>
-                <li>Headings</li>
+                <li>Headings & paragraphs</li>
                 <li>style</li>
-                <li>input</li>
-                <li>Textarea</li>
-                <li>button</li>
+                <li>input & button</li>
+                <li>Formating</li>
                 <li>Form</li>
                 <li>Table</li>
                 <li>Lists</li>
+                <li>iframe</li>
             </ul>
         </div>
         <div class="right">
@@ -81,36 +82,99 @@
                     <li><p class="main__desc">section</p></li>
                     <img src="img/assasient/semantic el.png" alt="">
                 </ol>
+                <h2 class="main__title">Comments</h2>
+                <p class="main__desc"><span>!</span> Komentariya asosan html elementlardan oldin qoyilib nima uchunligi qisqacha aytib otiladi</p>
             </section>
             <section class="informs">
                 <h2 class="main__title">Atributelarga kirish!</h2>
                 <p class="main__desc"><span>!</span> Atributelar elementga osonlik beradi va ular yordamida boshqa sahifaga otish classlar berish va h.k lar qilish mumkin!</p>
                 <p class="main__desc block">Bular:</p>
                 <ol class="main__table">
-                    <li><p class="main__desc">lang</p></li>
-                    <li><p class="main__desc">class</p></li>
-                    <li><p class="main__desc">href</p></li>
-                    <li><p class="main__desc">id</p></li>
-                    <li><p class="main__desc">alt</p></li>
-                    <li><p class="main__desc">src</p></li>
-                    <li><p class="main__desc">style</p></li>
+                    <li><p class="main__desc"><div class="necessary">lang</div> - bu asosan htmlda ishlatiladi va htmlning qaysi tilida yozilayotgani haqida malumot beradi.</p></li>
+                    <li><p class="main__desc"><div class="necessary">class</div> - bu asosan elementlarni guruhlash uchun kerak</p></li>
+                    <li><p class="main__desc"><div class="necessary">href</div> - o'tishi kerak bolgan sahifaga yo'l korsatish</p></li>
+                    <li><p class="main__desc"><div class="necessary">id</div> - bu html faylda bir martta ishlatiladigon elementlar uchun guruhlash</p></li>
+                    <li><p class="main__desc"><div class="necessary">src</div> - bu rasm yoki boshqa fayllar uchun yol korsatish</p></li>
+                    <li><p class="main__desc"><div class="necessary">alt</div> - bu agar src ga berilgan yolda file topilmasa yoki yo'l xato berilsa uning orniga chiqadigon soz uchun</p></li>
+                    <li><p class="main__desc"><div class="necessary">style</div> - bu elementlarga inline style berish</p></li>
+                    <li><p class="main__desc"><div class="necessary">type</div> - bu elementning qanday turga mos ekanligiga javob beradi.</p></li>
                 </ol>
-                <p class="main__desc block">Atributelar</p>
             </section>
             <section class="informs">
                 <h2 class="main__title">Heading kirish!</h2>
                 <p class="main__desc"><span>!</span> Headinglar textlar, maqolalar, she'rlar va boshqa yozuvli matnlarga Sarlavha hisoblanadi.</p>
-                <p class="main__desc block">Bular:</p>
+                <p class="main__desc block">Headingni 6 ta turi mavjud:</p>
                 <ol class="main__table">
-                    <li><p class="main__desc">lang</p></li>
-                    <li><p class="main__desc">class</p></li>
-                    <li><p class="main__desc">href</p></li>
-                    <li><p class="main__desc">id</p></li>
-                    <li><p class="main__desc">alt</p></li>
-                    <li><p class="main__desc">src</p></li>
-                    <li><p class="main__desc">style</p></li>
+                    <li><p class="main__desc"><div class="necessary">h1</div> - Heading 1, default font-size 32px (2em) font-weight: bolder</p></li>
+                    <li><p class="main__desc"><div class="necessary">h2</div> - Heading 2, default font-size 24px (1.5em) font-weight: bolder</p></li>
+                    <li><p class="main__desc"><div class="necessary">h3</div> - Heading 3, default font-size 18.72px (1.17em) font-weight: bolder</p></li>
+                    <li><p class="main__desc"><div class="necessary">h4</div> - Heading 4, default font-size 16px (1em) font-weight: bolder</p></li>
+                    <li><p class="main__desc"><div class="necessary">h5</div> - Heading 5, default font-size 13.28px (0.83em) font-weight: bolder</p></li>
+                    <li><p class="main__desc"><div class="necessary">h6</div> - Heading 6, default font-size 10.72px (0.67em) font-weight: bolder</p></li>
                 </ol>
-                <p class="main__desc block">Atributelar</p>
+                <h2 class="main__title">Paragraph kirish!</h2>
+                <p class="main__desc"><span>!</span> Gazeta, kitob v.k larda albatta qisqacha yoki bir dunyo textlar yozilgan boladi bular paragriflar deyiladi. </p>
+                <p class="main__desc block">Paragrifning bittagina korinishi bor</p>
+                <ol class="main__table">
+                    <li><p class="main__desc"><div class="necessary">p</div> - koproq textlar uchun ishlatilinadi!</p></li>
+                </ol>
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Stylega kirish!</h2>
+                <p class="main__desc"><span>!</span> Style (stillar) asosan elemntga still berish uchun ishlatilinadi.</p>
+                <p class="main__desc block">Stylening 3ta turi mavjud:</p>
+                <ol class="main__table">
+                    <li><p class="main__desc"><div class="necessary">Inline</div> - Elementning style atributida beriladigon stillar</p></li>
+                    <li><p class="main__desc"><div class="necessary">Internal</div> - htmlning head qismidagi style bolib u yerda ham stillar yozsak boladi</p></li>
+                    <li><p class="main__desc"><div class="necessary">External</div> - Eng yaxshi va eng kop ishlatilinadigon stil turi htmlning head qismida link orqali ulanib boshqa style faylga yozilgan stillar</p></li>
+                </ol>
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Inputga kirish!</h2>
+                <p class="main__desc"><span>!</span> Inputlar foydalanuvchidan malumot olish yoki dinamik tarzda boshqarish va bir qancha hususiyatlarga ega elementdir</p>
+                <p class="main__desc block">Inputlarning 14ta tipi mavjud:</p>
+                <ol class="main__table">
+                    <li><p class="main__desc"><div class="necessary">type="text"</div> - Bu matn, ism sharif, turarjoy yoki boshqa turli xil matnlar uchun</p></li>
+                    <li><p class="main__desc"><div class="necessary">type="email"</div> - Emailga asoslangan input turi, unda asosan foydalanuvchi royxatdan otayotganda emaili tekshirilishi uchun ishlatiladi</p></li>
+                    <li><p class="main__desc"><div class="necessary">type="password"</div> - Parollar va maxfiy sozlar uchun mojallangan input turi</p></li>
+                    <li><p class="main__desc"><div class="necessary">type="radio"</div> - Bir nechta kannallardan bittasiga ulanish uchun ishlatilinadi</p></li>
+                    <li><p class="main__desc"><div class="necessary">type="color"</div> - Ranglar bilan ishlash uchun mojallangan input turi</p></li>
+                    <li><p class="main__desc"><div class="necessary">type="range"</div> - Biron funksiyani qiymatini tanlashda ishlatilinadi asosan video yoki musiqalarni davomiyligi yoki ovozini baland pasligi uchun ishlatilinadi</p></li>
+                    <li><p class="main__desc"><div class="necessary">type="checkbox"</div> - Bu bajarish yani biron ish bajarilganda bajardim tugmasini bosadi bu huddi shunday tugma</p></li>
+                    <li><p class="main__desc"><div class="necessary">type="file"</div> - Foydalanuvchi tomonidan kiritiladigon faylar uchun mojallangan input turi</p></li>
+                    <li><p class="main__desc"><div class="necessary">type="number"</div> - Faqat sonlarni qabul qiluvchi input turi</p></li>
+                    <li><p class="main__desc"><div class="necessary">type="tel"</div> - Telefon nomerlar uchun mojallangan input turi</p></li>
+                    <li><p class="main__desc"><div class="necessary">type="search"</div> - Malumotlar iz;ash uchun mojallangan input turi</p></li>
+                    <li><p class="main__desc"><div class="necessary">type="time"</div> - Soat uchun mojallangan input turi</p></li>
+                    <li><p class="main__desc"><div class="necessary">type="hidden"</div> - korinmas input turi</p></li>
+                    <li><p class="main__desc"><div class="necessary">type="button"</div> - Jonatish tugmasiga mojalangan input turi</p></li>
+                </ol>
+                <h2 class="main__title">Yanabir inputga oxshash elemnet bu textarea!</h2>
+                <p class="main__desc"><span>!</span> U (textarea) yordamida choziluvchan input hosil qilishimiz mumkin</p>
+                <ul class="main__table">
+                    <li><p class="main__desc"><div class="necessary">textarea</div> - Bu Foydalanuvchi tomonidan ham boshqariladigon input turi desa ham boladi.</p></li>
+                </ul>
+                <h2 class="main__title">Buttonga kirish!</h2>
+                <p class="main__desc"><span>!</span> Buttonlar inputga kiritilgan malumotlarni jonatish chun ishlatilinadi</p>
+                <ul class="main__table">
+                    <li><p class="main__desc"><div class="necessary">button</div> - Bu malumotlarni jonatish uchun ishlatilinadi.</p></li>
+                </ul>
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Html Elemntlarni formatlash!</h2>
+                <p class="main__desc"><span>!</span> Formatlash elementlari matnning maxsus turlarini ko'rsatish uchun mo'ljallangan:</p>
+                <ul class="main__table">
+                    <li><p class="main__desc"><div class="necessary">b</div> - Qalin matn</p></li>
+                    <li><p class="main__desc"><div class="necessary">strong</div> - Muhum matn</p></li>
+                    <li><p class="main__desc"><div class="necessary">i</div> - Kursiv matn</p></li>
+                    <li><p class="main__desc"><div class="necessary">em</div> - Takidlangan matn</p></li>
+                    <li><p class="main__desc"><div class="necessary">mark</div> - Belgilangan matn</p></li>
+                    <li><p class="main__desc"><div class="necessary">small</div> - Kichikroq matn</p></li>
+                    <li><p class="main__desc"><div class="necessary">del</div> - O'chirilgan matn</p></li>
+                    <li><p class="main__desc"><div class="necessary">ins</div> - Kiritilgan matn</p></li>
+                    <li><p class="main__desc"><div class="necessary">sub</div> - Subscript matn (indeks)</p></li>
+                    <li><p class="main__desc"><div class="necessary">sup</div> - Yuqori yozuv matn (daraja)</p></li>
+                </ul>
             </section>
         </div>
     </main>

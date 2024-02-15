@@ -10,6 +10,7 @@
 body {
   background-color: var(--bg-color);
   z-index: 1;
+  font-size: 16px;
 }
 
 :root {
@@ -293,6 +294,13 @@ body {
   right: 10px;
   font-size: 25px;
   display: none;
+  color: var(--dark-color);
+}
+.all__main .left .modul__title {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 23px;
+  font-weight: 700;
 }
 .all__main ::-webkit-scrollbar {
   width: 0;
@@ -410,7 +418,7 @@ body {
     display: block;
   }
   .left .nav__main {
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .all__main .right {
     width: 98vw;
