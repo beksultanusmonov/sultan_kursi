@@ -40,8 +40,9 @@
             <ul class="nav__main">
                 <a href="#" id="back__menu"><i class="fa-solid fa-xmark"></i></a>
                 <h3 class="modul__title">1-Modul</h3>
+                <h3 class="modul__title">Html darsligi</h3>
                 <li class="active">Html</li>
-                <li>Atribute</li>
+                <li>Attribute</li>
                 <li>Headings & paragraphs</li>
                 <li>style</li>
                 <li>input & button</li>
@@ -50,6 +51,10 @@
                 <li>Table</li>
                 <li>Lists</li>
                 <li>iframe</li>
+                <li>Select & option</li>
+                <h3 class="modul__title">Css darsligi</h3>
+                <li>Css</li>
+                <li>Selectors</li>
             </ul>
         </div>
         <div class="right">
@@ -65,6 +70,7 @@
                     <li><p class="main__desc">Element <div class="necessary">title</div> - Bu html faylning ismi bolib, u yerga nima web sayt haqida ekanligi yoziladi.</p></li>
                     <li><p class="main__desc">Element <div class="necessary">body</div> - Bu htmlning tanasi bolib asosan shu joyda loyiha yaratiladi.</p></li>                    
                     <li><p class="main__desc">Element <div class="necessary">h1</div> - Bu sarlavha bolib, mavzularni katta kichik qilib beradi.</p></li>                    
+                    <li><p class="main__desc">Element <div class="necessary">a</div> - Bu sahifadan sahifaga otish uchun ishlatilinadi.</p></li>                    
                 </ol>
                 <h2 class="main__title">Semantic Elements</h2>
                 <p class="main__desc"><span>!</span> Bu asosan kozi ojizlar va har xil kod tekshiruvchi botlar uchun yozilgan content qanday malumotga asoslangan ekanligi haqida aytib turadi.</p>
@@ -86,8 +92,8 @@
                 <p class="main__desc"><span>!</span> Komentariya asosan html elementlardan oldin qoyilib nima uchunligi qisqacha aytib otiladi</p>
             </section>
             <section class="informs">
-                <h2 class="main__title">Atributelarga kirish!</h2>
-                <p class="main__desc"><span>!</span> Atributelar elementga osonlik beradi va ular yordamida boshqa sahifaga otish classlar berish va h.k lar qilish mumkin!</p>
+                <h2 class="main__title">Attributelarga kirish!</h2>
+                <p class="main__desc"><span>!</span> Attributelar elementga osonlik beradi va ular yordamida boshqa sahifaga otish classlar berish va h.k lar qilish mumkin!</p>
                 <p class="main__desc block">Bular:</p>
                 <ol class="main__table">
                     <li><p class="main__desc"><div class="necessary">lang</div> - bu asosan htmlda ishlatiladi va htmlning qaysi tilida yozilayotgani haqida malumot beradi.</p></li>
@@ -99,6 +105,8 @@
                     <li><p class="main__desc"><div class="necessary">style</div> - bu elementlarga inline style berish</p></li>
                     <li><p class="main__desc"><div class="necessary">type</div> - bu elementning qanday turga mos ekanligiga javob beradi.</p></li>
                 </ol>
+                <h2 class="main__title">Next page</h2>
+                <p class="main__desc"><span>!</span> Agar biz a elementiga target="_blank" berib qo'ysak bosilganda boshqa sahifada ochiladi.</p>
             </section>
             <section class="informs">
                 <h2 class="main__title">Heading kirish!</h2>
@@ -149,6 +157,11 @@
                     <li><p class="main__desc"><div class="necessary">type="hidden"</div> - korinmas input turi</p></li>
                     <li><p class="main__desc"><div class="necessary">type="button"</div> - Jonatish tugmasiga mojalangan input turi</p></li>
                 </ol>
+                <p class="main__desc"><span>!</span> Inputning eng krakli atributilari:</p>
+                <ul class="main__table">
+                    <li><p class="main__desc"><div class="necessary">required</div> - Agar malumot kiritilmagan bolsa, kiritishni talab qiladi.</p></li>
+                    <li><p class="main__desc"><div class="necessary">readonly</div> - Inputga hech qanday malumot kirita olmaydi, faqat malumotni korish uchun ishlatilionadi.</p></li>
+                </ul>
                 <h2 class="main__title">Yanabir inputga oxshash elemnet bu textarea!</h2>
                 <p class="main__desc"><span>!</span> U (textarea) yordamida choziluvchan input hosil qilishimiz mumkin</p>
                 <ul class="main__table">
@@ -174,6 +187,118 @@
                     <li><p class="main__desc"><div class="necessary">ins</div> - Kiritilgan matn</p></li>
                     <li><p class="main__desc"><div class="necessary">sub</div> - Subscript matn (indeks)</p></li>
                     <li><p class="main__desc"><div class="necessary">sup</div> - Yuqori yozuv matn (daraja)</p></li>
+                </ul>
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Formaga kirish!</h2>
+                <p class="main__desc"><span>!</span> Formalar asosan royxatda otayotganda, post joylayotganda va bir qancha foydalanuvchilarni malumotlarini olishda foydalaniladi. </p>
+                <p class="main__desc block">Forma elementlariga asosan quyidagilar kiradi:</p>
+                <ul class="main__table">
+                    <li><p class="main__desc"><div class="necessary">input</div> - Malumot olish uchun</p></li>
+                    <li><p class="main__desc"><div class="necessary">button</div> - Malumot jonatish uchun</p></li>
+                </ul>
+                <p class="main__desc block">Agar biz inputlarga required atributini berib qoysak bo'sh inputlarda xatolik korasatadi va foydalanuvchidan inputlarni to'ldirishini talab qiladi.</p>            
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Tables (jadvallar) ga kirish!</h2>
+                <p class="main__desc"><span>!</span> Jadvallar odatda koplab malumotlarni birin ketinlik bilan chiqarishda ishlatilinadi. Ular yordamida foydalanuvchilar, tovarlar, eskizlar va h.klarni royxatini chiqarishimiz mumkin. </p>
+                <p class="main__desc block">Table ning asosiy elementlari:</p>
+                <ol class="main__table">
+                    <li><p class="main__desc"><div class="necessary">table</div> - bu jadval yaratib beradi.</p></li>
+                    <li><p class="main__desc"><div class="necessary">thead</div> - Bu jadvalning boshi.</p></li>
+                    <li><p class="main__desc"><div class="necessary">tr</div> - Bu jadval ichidagi elementlarni yaratib beradi.</p></li>
+                    <li><p class="main__desc"><div class="necessary">th</div> - Bu jadvalning boshida ozgarmas turadigon jadval nomlari.</p></li>
+                    <li><p class="main__desc"><div class="necessary">tbody</div> - Bu jadvalning tanasi, u yerda malumotlar ketma-ketlik bilan chiqib keladi.</p></li>
+                    <li><p class="main__desc"><div class="necessary">td</div> - Bu jadvalning tanasida chiqib keladigon malumotlar.</p></li>
+                </ol>
+                <p class="main__desc block"><span>!</span> Agar biz tablening atributida border="1";  berib qoysak jadval aniq va tiniq korinadi.</p>
+                <p class="main__desc block"><span>!</span> Agar biz tablening stiliga border-collapse: collapse;  berib qoysak biz hohlagandek joylashadi.</p>
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Lists (ro'yxatlar) ga kirish!</h2>
+                <p class="main__desc"><span>!</span> Ro'yxatlar asosan malumotlarni tartiblash yoki tekislash uchun ishlatilinadi. Lists odatda ikki turga bolinadi: Tartibli va tartibsiz.</p>
+                <p class="main__desc block">Tartibli listsning asosiy elementlari:</p>
+                <ol class="main__table">
+                    <li><p class="main__desc"><div class="necessary">ol</div> - Bu tartibli list yaratib beruvchi element.</p></li>
+                    <li><p class="main__desc"><div class="necessary">li</div> - Bu listning ichidagi element.</p></li>
+                </ol>
+                <p class="main__desc block">Tartibli listlarda har bir elementning oldiga sonlar bilan yoziladi.</p>            
+                <p class="main__desc block">Tartibsiz listsning asosiy elementlari:</p>
+                <ol class="main__table">
+                    <li><p class="main__desc"><div class="necessary">ul</div> - Bu tartibsiz list yaratib beruvchi element.</p></li>
+                    <li><p class="main__desc"><div class="necessary">li</div> - Bu listning ichidagi element.</p></li>
+                </ol>
+                <p class="main__desc block">Tartibsiz listlarda har bir elementning oldiga dumaloq bilan yoziladi.</p>            
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Iframega kirish!</h2>
+                <p class="main__desc"><span>!</span> Iframelar sayt ichida boshqa sayt qurilishidir, yani o'z saytingiz ichida boshqa saytni ham qoyib qoyishingiz mumkin.</p>
+                <p class="main__desc block">Iframelar odatda saytga xarita, youtube video va filial saytlar bolsa shuni qoyishda ishlatilinadi.</p>
+                <ol class="main__table">
+                    <li><p class="main__desc"><div class="necessary">iframe</div> - Iframe yaratuvchi element.</p></li>
+                </ol>
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Selects (tanlshlar)ga kirish!</h2>
+                <p class="main__desc"><span>!</span> Selects odatda foydalanuvchiga bir nechta takliflar berish va foydalanuvchi birini tanlsb olishi uchun ishlatilinadi.</p>
+                <p class="main__desc block">Selects elementlari:</p>
+                <ol class="main__table">
+                    <li><p class="main__desc"><div class="necessary">select</div> - bu tanlsh uchun dropdawn yaratib beradi.</p></li>
+                    <li><p class="main__desc"><div class="necessary">option</div> - Bu tanlanuvchi element yaratib beradi.</p></li>
+                </ol>
+                <p class="main__desc"><span>!</span> Agar biz biron option ga selected atributini bersak shu option avtomatiski tanlangan boladi.</p>
+                <p class="main__desc"><span>!</span> Agar hech qaysi optionga selected artibuti berilmagan bo'lsa, u holda avtomatiskiy birinchi option ni tanlab oladi.</p>
+            </section>
+            <!-- css sections -->
+            <section class="informs">
+                <h2 class="main__title">Cssga kirish!</h2>
+                <p class="main__desc"><span>!</span> Cssning kengaytmasi Cascading Style Sheets bunig manosi Kaskadlangan Stillar jadvali.</p>
+                <p class="main__desc block"><span>!</span> Css ning versiyalari:</p>
+                <ol class="main__table">
+                    <li><p class="main__desc"><div class="necessary">Css-1</div> - 1996-yil, dekabr oyi o'rtalarida ishlab chiqilgan.</p></li>
+                    <li><p class="main__desc"><div class="necessary">Css-2</div> - 1998-yil, may oyida ishlab chiqilgan. 2-versiya 1-versiya ustida qurilgan bo'lib bazibir imkoniyatlar qoshilgan.</p></li>
+                    <li><p class="main__desc"><div class="necessary">Css-3</div> - 1999-yil, iyun oyida ishlab chiqilgan. 3-versiyada koplab funksiyalar qoshilgan holda ishlab chiqilgan va shundan beri css 3 dan foydalanib keliniladi.</p></li>
+                </ol>
+                <h2 class="main__title">Cssni html hujjatga ulash!</h2>
+                <p class="main__desc"><span>!</span> Buning uchun html hujjatga otamiz va head qismida link orqali css faylga yo'l ko'rsatamiz va css fayl ulanadi.</p>
+                <h2 class="main__title">Css turlari!</h2>
+                <p class="main__desc"><span>!</span> Html darsida aytib otilgandek css turlari uch turga bo'linadi:</p>
+                <ol class="main__table">
+                    <li><p class="main__desc"><div class="necessary">Inline</div> - Elementning style atributida beriladigon stillar</p></li>
+                    <li><p class="main__desc"><div class="necessary">Internal</div> - htmlning head qismidagi style bolib u yerda ham stillar yozsak boladi</p></li>
+                    <li><p class="main__desc"><div class="necessary">External</div> - Eng yaxshi va eng kop ishlatilinadigon stil turi htmlning head qismida link orqali ulanib boshqa style faylga yozilgan stillar</p></li>
+                </ol>
+                <h2 class="main__title">Inline turi!</h2>
+                <p class="main__desc">Inline turida stil berish uchun elementga style attribute beriladi va qoshtirnoq ichida bir qatorlik css kod yoziladi.</p>
+                <h2 class="main__title">Internal turi!</h2>
+                <p class="main__desc">Internal turida stil berish uchun head elementi ichida style elementi ochiladi va shu joyda css kod yoziladi.</p>
+                <h2 class="main__title">External turi!</h2>
+                <p class="main__desc">External turida stil berish uchun head elementi ichida link ochilib, src da css faylga yo'l korsatiladi va css faylda kod yoziladi.</p>
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Css syntax!</h2>
+                <p class="main__desc"><span>!</span> Boshida qisqa css kod yozib ko'raylik.</p>
+                <ul class="main__table">
+                    <li class="l-none"><p class="main__desc">
+                        <div class="modal__examp">
+                            <div class="modal__sel">body {</div>
+                                <div class="modal__code">color: black; <br></div>
+                            <div class="modal__sel">}</div>
+                        </div>
+                    </p></li>
+                    <li><p class="main__desc"><div class="necessary">body</div> - Bu Selector yani tanlab oluvchi</p></li>
+                    <li><p class="main__desc"><div class="necessary">color</div> - Bu css xossa</p></li>
+                    <li><p class="main__desc"><div class="necessary">black</div> - Bu css qiymat</p></li>
+                </ul>
+                <p class="main__desc"><span>!</span> Shundan bilsak bo'ladiki css xossa va qiymatlarda iborat stillar toplami.</p>
+                <h2 class="main__title">Selectors (Tanlab oluvchilar)!</h2>
+                <p class="main__desc block">Selector turlari:</p>
+                <ul class="main__table">
+                    <li><p class="main__desc"><div class="necessary">tagName</div> - Bu htmlda yozilgan elementlar bolib ular (div, span, h1, p, section va h.k) teg nomi yordamida olinadi. (div)</p></li>
+                    <li><p class="main__desc"><div class="necessary">class</div> - Bu htmlda yozilgan class bolib u (.) nuqta yordamida olinadi. (.class)</p></li>
+                    <li><p class="main__desc"><div class="necessary">id</div> - Bu htmlda yozilgan id bolib u (#) reshotka yordamida olinadi. (#id)</p></li>
+                    <li><p class="main__desc"><div class="necessary">attribute</div> - Bu htmlda yozilgan attribute bolib u ([]) tortburchak qavs yordamida olinadi. ([input="text"])</p></li>
+                    <li><p class="main__desc"><div class="necessary">universal</div> - Bu htmlning hamma elementiga tenglanadigan selector bolib u (*) yulduzcha yordamida olinadi. (*)</p></li>
                 </ul>
             </section>
         </div>
