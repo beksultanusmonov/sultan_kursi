@@ -55,6 +55,10 @@
                 <h3 class="modul__title">Css darsligi</h3>
                 <li>Css</li>
                 <li>Selectors</li>
+                <li>Colors</li>
+                <li>Specificity</li>
+                <li>Inheritance</li>
+                <li>Cambinators</li>
             </ul>
         </div>
         <div class="right">
@@ -274,6 +278,8 @@
                 <p class="main__desc">Internal turida stil berish uchun head elementi ichida style elementi ochiladi va shu joyda css kod yoziladi.</p>
                 <h2 class="main__title">External turi!</h2>
                 <p class="main__desc">External turida stil berish uchun head elementi ichida link ochilib, src da css faylga yo'l korsatiladi va css faylda kod yoziladi.</p>
+                <h2 class="main__title">Comments (komentariyalar)!</h2>
+                <p class="main__desc"><span>!</span> Htmlda bo'lganidek css da ham kamentariyalar bor, bular asosan yozilayotgan still qaysi joy uchun ekanligini bildiradi va best proctics da ham ijobiy qaraladi.</p>
             </section>
             <section class="informs">
                 <h2 class="main__title">Css syntax!</h2>
@@ -300,6 +306,79 @@
                     <li><p class="main__desc"><div class="necessary">attribute</div> - Bu htmlda yozilgan attribute bolib u ([]) tortburchak qavs yordamida olinadi. ([input="text"])</p></li>
                     <li><p class="main__desc"><div class="necessary">universal</div> - Bu htmlning hamma elementiga tenglanadigan selector bolib u (*) yulduzcha yordamida olinadi. (*)</p></li>
                 </ul>
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Colors (ranglar)ga kirish!</h2>
+                <p class="main__desc"><span>!</span> Biz color yordamida elementga har xil rang va gradientlar berishimiz mumkin.</p>
+                <p class="main__desc"><span>!</span> Css da default nomiligicha qolgan ranglar ham anchagina.</p>
+                <p class="main__desc block">Bularga misol qilib:</p>
+                <ul class="main__table">
+                    <li><p class="main__desc"><div class="necessary">white</div> - oq rang.</p></li>
+                    <li><p class="main__desc"><div class="necessary">red</div> - qizil rang.</p></li>
+                    <li><p class="main__desc"><div class="necessary">black</div> - qora rang.</p></li>
+                    <li><p class="main__desc"><div class="necessary">pink</div> - pushti rang.</p></li>
+                    <li><p class="main__desc"><div class="necessary">purple</div> - siyoh rang.</p></li>
+                    <li><p class="main__desc"><div class="necessary">yellow</div> - sariq rang.</p></li>
+                    <li><p class="main__desc"><div class="necessary">oranged</div> - apelsin rang.</p></li>
+                    <li><p class="main__desc"><div class="necessary">green</div> - yashil rang.</p></li>
+                    <li><p class="main__desc"><div class="necessary">grey</div> - kul rang.</p></li>
+                </ul>
+                <p class="main__desc"><span>!</span> Bundan tashqari rgb yani red green blue uchta rang birlashishidan hosil boladigan bir qancha turlari bor. Siz bu yordamida hohlagan rang hosil qilishingiz mumkin.</p>
+                <p class="main__desc block">rgb bu raqamlardan tashkil topgan ranglardir, qisqa kod:</p>
+                <ul class="main__table">
+                    <li class="l-none"><p class="main__desc">
+                        <div class="modal__examp">
+                            <div class="modal__sel">body {</div>
+                                <div class="modal__code">background-color: rgb(0, 0, 0); <br></div>
+                            <div class="modal__sel">}</div>
+                        </div>
+                    </p></li>
+                </ul>
+                <p class="main__desc"><span>!</span> Ranglar bilan ishlashni osonlashtirish uchun color Pick plaginini ornatish tavsiya etiladi.</p>
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Specificity (o'ziga hoslik)ga kirish!</h2>
+                <h2 class="main__title">Cascading (kaskadlanish)!</h2>
+                <p class="main__desc"><span>!</span> Kaskadlanish deb - bitta elementga bir nechta css qoidalari ko'rsatilgan bo'lsa shulardan bittasini tasir qilishi.</p>
+                <p class="main__desc"><span>!</span> Kaskadlanish jarayonida qaysi usul ustunvor bo'lsa shu usulni bir xil stillar tasir qiladi qolganlarniki esa tasir qilmaydi.</p>
+                <p class="main__desc block">Ustunvorlik darajasini korib chiqadigon bolsak:</p>
+                <ol class="main__table">
+                    <li><p class="main__desc"><div class="necessary">inlini style</div> - Eng birinchi o'rinda inline yozilgan stillar ustunvor bo'ladi.</p></li>
+                    <li><p class="main__desc"><div class="necessary">id</div> - id esa inline stildan keyingi birinchi orinda turadigon ustunvor usuldir.</p></li>
+                    <li><p class="main__desc"><div class="necessary">class</div> - class esa id dan keyingi ustunvor usul.</p></li>
+                    <li><p class="main__desc"><div class="necessary">attribute</div> - class dan keyingi usul bu attributedir.</p></li>
+                    <li><p class="main__desc"><div class="necessary">tag</div> - eng oxirgisi bu tag yordamida berilgan stil usulidir.</p></li>
+                </ol>
+                <p class="main__desc"><span>!</span> Css devor qoidasi bilan ishlaydi yani devorga suv sepsangiz tepadan pastga qarab oqib tushdadi, misol uchun bitta elementga ikkita class yordamida color berildi bu holda css eng oxirgi (pastda) yozilgan kodni ishlatadi. </p>
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Inheritance (Meros olish)ga kirish!</h2>
+                <p class="main__desc"><span>!</span> Meros olish bu ota (parent) elementning stillariga ega bolishdir</p>
+                <p class="main__desc block">Misol uchun bir elementning ichidagi har bir elementiga bir xossa va qiymat beriladigon bo'lsak, u holda bir martta parent elemnetga stil yozish kifoya qiladi.
+                    Ota (parent) elementdagi kod farzandlariga tasir qiladi.
+                </p>
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Cambinators (Kambinatorlar)ga kirish!</h2>
+                <p class="main__desc"><span>!</span> Bilamizki insonlarda avlodlari farzand nevara chevara va h.k bo`lib ketadi, html hujjatda ham huddi shunday body header nav section va h.k bolib ketadi.</p>
+                <p class="main__desc block">Misol uchun quyidagi rasmga etib qaratsak:</p>
+                <ul class="main__table">
+                    <img src="img/modul/shajara.PNG" alt="">
+                </ul>
+                <p class="main__desc block">Yuqoridagi rasmda body ga farzand h2, p teglari bor undan so'ng div farzandi bor shu div farzandini ichidagi p teglar body uchun navaradir va div uchun farzandir.
+                    Undan keyin divning ichidagi section tegi div uchun farzand body uchun navaradir va sectioning ichidagi p tegi section uchun farzand div uchun navaradir body uchun esa evaradir 
+                </p>
+                <p class="main__desc"><span>!</span> Cssda kambinatorlar muhum ahamiyatga ega chunki css kod shu asosida yoziladi. Agar biz divning ichidagi sectionnni olmoqchi bolsak quydagicha kod yoziladi:</p>
+                <ul class="main__table">
+                    <li class="l-none"><p class="main__desc">
+                        <div class="modal__examp">
+                            <div class="modal__sel">body div section{</div>
+                                <div class="modal__code">color: black; <br></div>
+                            <div class="modal__sel">}</div>
+                        </div>
+                    </p></li>
+                </ul>
+                <p class="main__desc"><span>!</span> Albatta bu qisqa korinishi real loyihalarda classlar berilib ishlanadi.</p>
             </section>
         </div>
     </main>
