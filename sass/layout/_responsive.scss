@@ -132,5 +132,19 @@
 
     .modal__examp{
         font-size: 15px;
+        padding: 10px 8px;
+        width: 100% !important;
+    }
+
+    .img{
+        max-width: 88vw !important;
+    }
+
+    .main__table{
+        padding: 13px;
+
+        .res{
+            max-width: 100%;
+        }
     }
 }

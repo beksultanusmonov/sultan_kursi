@@ -129,17 +129,27 @@
 
 .necessary{
     display: inline-block;
-    background-color: #f5f5f5;
+    background-color: #edeaea;
     color: #dc1472;
     padding: 0 5px;
     margin-bottom: 5px;
-    margin-left: 5px
-}
+    margin-left: 5px;
+}    
 
 .main__table{
     padding-left: 20px;
     color: var(--dark-color);
     margin-bottom: 15px;
+
+    .img{
+        width: 98%;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+
 }
 
 .main_ex{
@@ -160,13 +170,15 @@
 
 .modal__examp{
     padding: 10px 15px;
-    background-color: #f5f5f5;
+    background-color: var(--modal-bg-color);
     display: inline-block;
     border-radius: 10px;
     font-size: 19px;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 15px;
     list-style: none;
+    width: 96%;
+    max-width: 98%;
 
     .modal__sel{
         color: #e7b01b;
@@ -181,4 +193,41 @@
 
 .l-none{
     list-style: none !important;
+}
+
+.img{
+    max-width: 90vw !important;
+}
+
+p{
+    &.dotted{
+        border: 3px dotted grey;
+    }
+    &.dashed{
+        border: 3px dashed grey;
+    }
+    &.solid{
+        border: 3px solid grey;
+    }
+    &.double{
+        border: 3px double grey;
+    }
+    &.groove{
+        border: 3px groove grey;
+    }
+    &.ridge{
+        border: 3px ridge grey;
+    }
+    &.inset{
+        border: 3px inset grey;
+    }
+    &.outset{
+        border: 3px outset grey;
+    }
+    &.none{
+        border: 3px none grey;
+    }
+    &.hidden{
+        border: 3px hidden grey;
+    }
 }

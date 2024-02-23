@@ -59,6 +59,10 @@
                 <li>Specificity</li>
                 <li>Inheritance</li>
                 <li>Cambinators</li>
+                <li>Classes</li>
+                <li>Class or ID, !</li>
+                <li>Box Model</li>
+                <li>Shorthands</li>
             </ul>
         </div>
         <div class="right">
@@ -363,12 +367,12 @@
                 <p class="main__desc"><span>!</span> Bilamizki insonlarda avlodlari farzand nevara chevara va h.k bo`lib ketadi, html hujjatda ham huddi shunday body header nav section va h.k bolib ketadi.</p>
                 <p class="main__desc block">Misol uchun quyidagi rasmga etib qaratsak:</p>
                 <ul class="main__table">
-                    <img src="img/modul/shajara.PNG" alt="">
+                    <img src="img/modul/shajara.PNG" class="img" alt="">
                 </ul>
                 <p class="main__desc block">Yuqoridagi rasmda body ga farzand h2, p teglari bor undan so'ng div farzandi bor shu div farzandini ichidagi p teglar body uchun navaradir va div uchun farzandir.
                     Undan keyin divning ichidagi section tegi div uchun farzand body uchun navaradir va sectioning ichidagi p tegi section uchun farzand div uchun navaradir body uchun esa evaradir 
                 </p>
-                <p class="main__desc"><span>!</span> Cssda kambinatorlar muhum ahamiyatga ega chunki css kod shu asosida yoziladi. Agar biz divning ichidagi sectionnni olmoqchi bolsak quydagicha kod yoziladi:</p>
+                <p class="main__desc"><span>!</span> Cssda kambinatorlar muhum ahamiyatga ega chunki css kod shu asosida yoziladi. Agar biz divning ichidagi sectionni olmoqchi bolsak quydagicha kod yoziladi:</p>
                 <ul class="main__table">
                     <li class="l-none"><p class="main__desc">
                         <div class="modal__examp">
@@ -379,6 +383,301 @@
                     </p></li>
                 </ul>
                 <p class="main__desc"><span>!</span> Albatta bu qisqa korinishi real loyihalarda classlar berilib ishlanadi.</p>
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Classes (klaslar)ga kirish!</h2>
+                <p class="main__desc"><span>!</span> Biz classlar bilan ozgina tanishib oldik endi uni yana bir imkoniyati bilan tanishib o'tsak.</p>
+                <p class="main__desc block">Biz prokeyt kotarayotganimizda bir xil stilli elementlar bo'lishi mumkin, ularning har biriga still yozishdan ko'ra bitta class ochib hammasiga tegishli bola oladigon stillar yozish best procticsda yaxshi deb topilgan va o'zimiz uchun ham qulaydir.</p>
+                <ul class="main__table">
+                    <li class="l-none"><p class="main__desc">
+                        <div class="modal__examp">
+                            <div class="modal__sel">.color-red {</div>
+                                <div class="modal__code">color: red; <br></div>
+                            <div class="modal__sel">}</div><br>
+                            <div class="modal__sel">.font-size-16 {</div>
+                                <div class="modal__code">font-size: 16px; <br></div>
+                            <div class="modal__sel">}</div>
+                        </div>
+                    </p></li>
+                </ul>
+                <p class="main__desc">Yuqoridagi kodga etibor bering, unda tushunarli tarzda class nomi berilgan va uni html hujjatda bir necha martta ishlatsak bo'ladi.
+                    Ya'ni har hil elementlarini ichidagi yozuvini rangini qizil qilish kerak har bir elementga still yozmasdan class qo'yib ketsak ham bo'ladi.
+                </p>
+                <p class="main__desc"><span>!</span> Htmlda class olishda bir necha martta class attribute yozish mumkin emas, bir martta class attribute yozilib beriladigon classlar orasidan joy tashlanib qoshilib ketaveradi.</p>
+                <ul class="main__table">
+                    <li class="l-none"><p class="main__desc">
+                        <div class="modal__examp">
+                            <div class="modal__sel"> class="color-red font-size-16" {</div>
+                                <div class="modal__code">color: red; <br></div>
+                            <div class="modal__sel">}</div>
+                        </div>
+                    </p></li>
+                </ul>
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Class va ID, !Important ga kirish !</h2>
+                <h2 class="main__title">Classlar</h2>
+                <p class="main__desc"><span>!</span> Classlar odatda bir necha martta foydanaliladigon elementlar uchun ishlatilinadi.
+                Misol uchun bir nechta text elementlar bor ularga bir xil still beriladigon bo'lsa bitta class yozilib uni boshqa elementlarda ham ishlatish tavsiya etiladi.</p>
+                <ul class="main__table">
+                    <li class="l-none"><p class="main__desc">
+                        <div class="modal__examp">
+                            <div class="modal__sel">.text-center {</div>
+                                <div class="modal__code">text-align: center;<br></div>
+                            <div class="modal__sel">}</div>
+                        </div>
+                    </p></li>
+                </ul>
+                <h2 class="main__title">IDlar</h2>
+                <p class="main__desc"><span>!</span> Idlar odatda faqat bir martta ishlatilinadigon elementlar uchundir. Biz html idni bir martta yozgan bo'lsak qaytib shu nom bilan yoa olmaymiz.
+                Odatda idlar close Buttonlar uchun, cart savatchalar uchun ishlatilinadi.</p>
+                <ul class="main__table">
+                    <li class="l-none"><p class="main__desc">
+                        <div class="modal__examp">
+                            <div class="modal__sel">#close-btn {</div>
+                                <div class="modal__code">z-index: 100;<br></div>
+                            <div class="modal__sel">}</div>
+                        </div>
+                    </p></li>
+                </ul>
+                <h2 class="main__title">!Impotantlar</h2>
+                <p class="main__desc"><span>!</span> Importantlar odatda muhum elementlarda ishlatilinadi.
+                Agar bir elementda oldin still berilgan bo'lsa va siz boshqa still yozayotgan bo'lsangiz sizni stillingizni olmasa Important orqali oldirishingiz mumkun.
+                Asosan bir elementga classda still berayotganingizda shu elementning idsi bo'lsa va iddagi stillarni olsa Important orqali ham oldirishingiz mumkun.</p>
+                <ul class="main__table">
+                    <li class="l-none"><p class="main__desc">
+                        <div class="modal__examp">
+                            <div class="modal__sel">.card {</div>
+                                <div class="modal__code">background-color: #fff !impotant;<br></div>
+                            <div class="modal__sel">}</div>
+                        </div>
+                    </p></li>
+                </ul>
+                <p class="main__desc block"><span>!</span> Bundan tashqari important kalit so'zini hohlagan hossa uchun qo'llashingiz mumkun.</p>
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Box Model (Quti modeli)ga kirish!</h2>
+                <ul class="main__table">
+                    <img src="img/modul/box_model.png" class="img">
+                </ul>
+                <p class="main__desc block"><span>!</span> Box modeli quyidagilarda iborat:</p>
+                <ol class="main__table">
+                    <li><p class="main__desc"><div class="necessary">Top, Right, Bottom, Left</div> - Birinchisi float qiymatlari hisoblanadi va ular soat strelkasi bo'ylab qoyiladi.</p></li>
+                    <li><p class="main__desc"><div class="necessary">Margin</div> - Ikkinchisi bu margin ya'ni tashqaridan joylashishi.</p></li>
+                    <li><p class="main__desc"><div class="necessary">Border</div> - Uchunchisi bu border ya'ni huddi rasmning ramkasiga oxshash rasmdagi tashqi chiziq.</p></li>
+                    <li><p class="main__desc"><div class="necessary">Padding</div> - To'rinchisi bu padding ya'ni ichkariga itarishi.</p></li>
+                    <li><p class="main__desc"><div class="necessary">Content</div> - Beshinchisi bu content ya'ni huddi rasm deb qarasak ham bo'ladi va uning width (kenglik), height (balandlik) xossasiga ega bo'ladi.</p></li>
+                </ol>
+                <h2 class="main__title">Margin collapsing ga kirish!</h2>
+                <p class="main__desc"><span>!</span> Margin collapsing bu ikkita tepa va pastda joylashgan qutining marginlarini olib ulardan kattasinikini natijaviy qilib qaytaradi.
+                Misol uchun tepadagi qutiga bottom da 10 px va pastgagidan top dan 30 px deb yozsak ikkalasini birlashtirib natijaviysini qo'yadi ya'ni 30ni: </p>
+                <ul class="main__table">
+                    <img src="img/modul/margin-collapsing.png" class="res">
+                </ul>
+                <p class="main__desc"><span>!</span> Bunday holda natijaviysini olgandan keyin ikkinchi elementning berilgan qiymati yoqilib qoladi:</p>
+                <ul class="main__table">
+                    <img src="img/modul/margin-collapsing-2.png" class="res">
+                </ul>
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Shorthands (Qisqartmalar)ga kirish!</h2>
+                <p class="main__desc"><span>!</span> Qisqartmalar juda ko'p ishlatilinadi va ular qulaydir misol uchun kengaytmasidagi holatni ko'rsak:</p>
+                <ul class="main__table">
+                    <li class="l-none">
+                        <p class="main__desc">
+                            <div class="modal__examp">
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">margin-top: 10px;</div>
+                                    <div class="modal__code">margin-right: 10px;</div>
+                                    <div class="modal__code">margin-bottom: 10px;</div>
+                                    <div class="modal__code">margin-left: 10px;</div>
+                                <div class="modal__sel">}</div>
+                            </div>
+                        </p>
+                    </li>
+                </ul>
+                <p class="main__desc"><span>!</span> Ko'rib turganingizdek har bir tomoniga bir xil qiymat berilayapti va har biriga alohida yozilayapti, bu kod kattalashishiga olib keladi va saytni ishlashini sekinlashtiradi.
+                Shunday muammoni yo'q qilish uchun qisqartmalar o'ylab topilgan. Misol uchun shuni qisqartirib yozsak:</p>
+                <ul class="main__table">
+                    <li class="l-none">
+                        <p class="main__desc">
+                            <div class="modal__examp">
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">margin: 10px;</div>
+                                <div class="modal__sel">}</div>
+                            </div>
+                        </p>
+                    </li>
+                </ul>
+                <p class="main__desc"><span>!</span> Bu kod qisqa va tushunarli hisoblanadi va manosi jihatdan yuqoridagi bilan bir xil.</p>
+                <p class="main__desc"><span>!</span> Agar biz har bir tomoniga alohida bermoqchi bo'lsak u holda qoyidagicha yo'l tutamiz:</p>
+                <ul class="main__table">
+                    <li class="l-none">
+                        <p class="main__desc">
+                            <div class="modal__examp">
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">margin: 10px 15px 20px 5px;</div>
+                                <div class="modal__sel">}</div>
+                            </div>
+                        </p>
+                    </li>
+                    <li><div class="necessary">birinchi 10px</div> - bu topga berilgan qiymat hisoblanadi.</li>
+                    <li><div class="necessary">ikkinchi 15px</div> - bu rightga berilgan qiymat hisoblanadi.</li>
+                    <li><div class="necessary">uchinchi 20px</div> - bu bottomga berilgan qiymat hisoblanadi.</li>
+                    <li><div class="necessary">to'rtinchi 5px</div> - bu leftga berilgan qiymat hisoblanadi.</li>
+                    <p class="main__desc">Shu tariqa soat strelkasi bo'ylab berib kelinadi!</p>
+                </ul>
+                <p class="main__desc"><span>!</span> Bundan tashqari top va bottomga bir xil o'lchov right va left ga bir xil o'lchov qo'ymoqchi bolsak quyidagi usuldan foydalanamiz:</p>
+                <ul class="main__table">
+                    <li class="l-none">
+                        <p class="main__desc">
+                            <div class="modal__examp">
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">margin: 5px 10px;</div>
+                                <div class="modal__sel">}</div>
+                            </div>
+                        </p>
+                    </li>
+                    <li><div class="necessary">birinchi 5px</div> - bu top va bottomga berilganqiymat.</li>
+                    <li><div class="necessary">ikkinchi 10px</div> - bu right va leftga berilganqiymat.</li>
+                </ul>
+                <p class="main__desc"><span>!</span> Huddi shu holatda buni paddingga ham qo'llasak bo'ladi:</p>
+                <ul class="main__table">
+                    <li class="l-none">
+                        <p class="main__desc">
+                            <div class="modal__examp">
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">padding-top: 10px;</div>
+                                    <div class="modal__code">padding-right: 10px;</div>
+                                    <div class="modal__code">padding-bottom: 10px;</div>
+                                    <div class="modal__code">padding-left: 10px;</div>
+                                <div class="modal__sel">}</div>
+                                <br>
+                                <div class="modal__examp">
+                                    <div class="modal__sel">.box {</div>
+                                        <div class="modal__code">padding: 10px 15px 20px 5px;</div>
+                                    <div class="modal__sel">}</div>
+                                </div>
+                                <br>
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">padding: 5px 10px;</div>
+                                <div class="modal__sel">}</div>
+                            </div>
+                        </p>
+                    </li>
+                </ul>
+                <p class="main__desc"><span>!</span> Endi border uchun ko'radigon bo'lsak, uning yoyilmasi:</p>
+                <ul class="main__table">
+                    <li class="l-none">
+                        <p class="main__desc">
+                            <div class="modal__examp">
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">border-width: 5px;</div>
+                                    <div class="modal__code">border-style: solid;</div>
+                                    <div class="modal__code">border-color: red;</div>
+                                <div class="modal__sel">}</div>
+                            </div>
+                        </p>
+                    </li>
+                    <li><div class="necessary">border-width</div> - bu borderning kengligi.</li>
+                    <li><div class="necessary">border-style</div> - bu borderning stili.</li>
+                    <li><div class="necessary">border-color</div> - bu borderning rangi.</li>
+                </ul>
+                <p class="main__desc"><span>!</span> Keling endi uni qisqartmasini ko'radigon bo'lsak:</p>
+                <ul class="main__table">
+                    <li class="l-none">
+                        <p class="main__desc">
+                            <div class="modal__examp">
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">border: 5px solid red;</div>
+                                <div class="modal__sel">}</div>
+                            </div>
+                        </p>
+                    </li>
+                    <p class="main__desc">bu qisqa va yaxshi ko'd hisoblanadi.</p>
+                </ul>
+                <p class="main__desc"><span>!</span> Border-stylening turlari:</p>
+                <ol class="main__table">
+                    <li><div class="necessary">dotted</div> - Nuqtali chegarani belgilaydi.</li>
+                    <li><div class="necessary">dashed</div> - Chiziqli chegarani belgilaydi.</li>
+                    <li><div class="necessary">solid</div> - Qattiq chegarani belgilaydi.</li>
+                    <li><div class="necessary">double</div> - Ikki chegarani belgilaydi.</li>
+                    <li><div class="necessary">groove</div> - 3D yivli chegarani belgilaydi. Effekt chegara rangi qiymatiga bog'liq.</li>
+                    <li><div class="necessary">ridge</div> - 3D chiziqli chegarani belgilaydi. Effekt chegara rangi qiymatiga bog'liq.</li>
+                    <li><div class="necessary">inset</div> - 3D ichki chegarani belgilaydi. Effekt chegara rangi qiymatiga bog'liq.</li>
+                    <li><div class="necessary">outset</div> - 3D boshlang'ich chegarasini belgilaydi. Effekt chegara rangi qiymatiga bog'liq.</li>
+                    <li><div class="necessary">none</div> - Chegarani belgilamaydi.</li>
+                    <li><div class="necessary">hidden</div> - Yashirin chegarani belgilaydi.</li>
+                    <li><div class="necessary">mix</div> - Bu turda biz o'zimiz hohlaganday qilib border belgilashimiz mumkun.</li>
+                </ol>
+                <p class="main__desc"><span>!</span> Border-stylening ishlashi:</p>
+                <ul class="main__table">
+                    <li class="l-none">
+                        <p class="main__desc">
+                            <div class="modal__examp">
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">border: 3px dotted grey;</div>
+                                <div class="modal__sel">}</div>
+                                <br>
+                                <p class="dotted">dotted stilli border!</p>
+                                <br>
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">border: 3px dashed grey;</div>
+                                <div class="modal__sel">}</div>
+                                <br>
+                                <p class="dashed">dashed stilli border!</p>
+                                <br>
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">border: 3px solid grey;</div>
+                                <div class="modal__sel">}</div>
+                                <br>
+                                <p class="solid">solid stilli border!</p>
+                                <br>
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">border: 3px double grey;</div>
+                                <div class="modal__sel">}</div>
+                                <br>
+                                <p class="double">double stilli border!</p>
+                                <br>
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">border: 3px groove grey;</div>
+                                <div class="modal__sel">}</div>
+                                <br>
+                                <p class="groove">groove stilli border!</p>
+                                <br>
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">border: 3px ridge grey;</div>
+                                <div class="modal__sel">}</div>
+                                <br>
+                                <p class="ridge">ridge stilli border!</p>
+                                <br>
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">border: 3px inset grey;</div>
+                                <div class="modal__sel">}</div>
+                                <br>
+                                <p class="inset">inset stilli border!</p>
+                                <br>
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">border: 3px outset grey;</div>
+                                <div class="modal__sel">}</div>
+                                <br>
+                                <p class="outset">outset stilli border!</p>
+                                <br>
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">border: 3px none grey;</div>
+                                <div class="modal__sel">}</div>
+                                <br>
+                                <p class="none">none stilli border!</p>
+                                <br>
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">border: 3px hidden grey;</div>
+                                <div class="modal__sel">}</div>
+                                <br>
+                                <p class="hidden">hidden stilli border!</p>
+                            </div>
+                        </p>
+                    </li>
+                </ul>
             </section>
         </div>
     </main>
