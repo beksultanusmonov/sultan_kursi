@@ -202,32 +202,79 @@
 p{
     &.dotted{
         border: 3px dotted grey;
+        color: #333 !important;
+        padding-left: 5px;
     }
     &.dashed{
         border: 3px dashed grey;
+        color: #333 !important;
+        padding-left: 5px;
     }
     &.solid{
         border: 3px solid grey;
+        color: #333 !important;
+        padding-left: 5px;
     }
     &.double{
         border: 3px double grey;
+        color: #333 !important;
+        padding-left: 5px;
     }
     &.groove{
         border: 3px groove grey;
+        color: #333 !important;
+        padding-left: 5px;
     }
     &.ridge{
         border: 3px ridge grey;
+        color: #333 !important;
+        padding-left: 5px;
     }
     &.inset{
         border: 3px inset grey;
+        color: #333 !important;
+        padding-left: 5px;
     }
     &.outset{
         border: 3px outset grey;
+        color: #333 !important;
+        padding-left: 5px;
     }
     &.none{
         border: 3px none grey;
+        color: #333 !important;
+        padding-left: 5px;
     }
     &.hidden{
         border: 3px hidden grey;
+        color: #333 !important;
+        padding-left: 5px;
+    }
+}
+
+.ver-a{
+    display: block;
+    padding: 5px;
+
+    img{
+        border: 1px solid #333;
+        display: inline-block;
+        margin-right: 10px;
+        max-width: 100%;
+    }
+}
+
+.b-1-b{
+    border: 1px solid #333;
+}
+
+p{
+    &.t-d-u{
+        text-decoration: underline;
+        display: inline-block;
+    }
+    &.t-d-l-t{
+        text-decoration: line-through;
+        display: inline-block;
     }
 }

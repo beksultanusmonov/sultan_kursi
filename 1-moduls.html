@@ -63,6 +63,10 @@
                 <li>Class or ID, !</li>
                 <li>Box Model</li>
                 <li>Shorthands</li>
+                <li>Width & Height</li>
+                <li>Display</li>
+                <li>Texts</li>
+                <li>Pseudo class & element</li>
             </ul>
         </div>
         <div class="right">
@@ -677,6 +681,232 @@
                             </div>
                         </p>
                     </li>
+                </ul>
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Width (kenglik) va Height (balandlik) xossalariga kirish!</h2>
+                <h2 class="main__title">Width (kenglik)</h2>
+                <p class="main__desc"><span>!</span> Width bu elementning kengligi belgilaydi va bu yordamida har qanday element uchun kenglik yozsak bo'ladi.</p>
+                <ul class="main__table">
+                    <li class="l-none">
+                        <p class="main__desc">
+                            <div class="modal__examp">
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">width: 200px;</div>
+                                <div class="modal__sel">}</div>
+                            </div>
+                        </p>
+                    </li>
+                </ul>
+                <p class="main__desc"><span>!</span> Widthning yana ikki xil turi bor birinchisi bu min-width:</p>
+                <ul class="main__table">
+                    <li class="l-none">
+                        <p class="main__desc">
+                            <div class="modal__examp">
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">min-width: 100px;</div>
+                                <div class="modal__sel">}</div>
+                            </div>
+                        </p>
+                    </li>
+                    <li><div class="necessary">min-width</div> - bu elementning eng kichik kengligini belgilaydi va element bundan kichik bo'la olmaydi.</li>
+                </ul>
+                <p class="main__desc"><span>!</span> Ikkinchi turi bu max-width:</p>
+                <ul class="main__table">
+                    <li class="l-none">
+                        <p class="main__desc">
+                            <div class="modal__examp">
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">max-width: 500px;</div>
+                                <div class="modal__sel">}</div>
+                            </div>
+                        </p>
+                    </li>
+                    <li><div class="necessary">max-width</div> - bu elementning eng katta kengligini belgilaydi va element bundan katta bo'la olmaydi.</li>
+                </ul>
+                <h2 class="main__title">Height (balandlik)</h2>
+                <p class="main__desc"><span>!</span> Width bu elementning balandligini belgilaydi va bu yordamida har qanday element uchun balandlik yozsak bo'ladi.</p>
+                <ul class="main__table">
+                    <li class="l-none">
+                        <p class="main__desc">
+                            <div class="modal__examp">
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">height: 200px;</div>
+                                <div class="modal__sel">}</div>
+                            </div>
+                        </p>
+                    </li>
+                </ul>
+                <p class="main__desc"><span>!</span> Widthda bo'lganidek heightda ham ikki xil turi bor birinchisi bu min-height:</p>
+                <ul class="main__table">
+                    <li class="l-none">
+                        <p class="main__desc">
+                            <div class="modal__examp">
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">min-height: 100px;</div>
+                                <div class="modal__sel">}</div>
+                            </div>
+                        </p>
+                    </li>
+                    <li><div class="necessary">min-height</div> - bu elementning eng kichik balandligini belgilaydi va element bundan kichik bo'la olmaydi.</li>
+                </ul>
+                <p class="main__desc"><span>!</span> Ikkinchi turi bu max-height:</p>
+                <ul class="main__table">
+                    <li class="l-none">
+                        <p class="main__desc">
+                            <div class="modal__examp">
+                                <div class="modal__sel">.box {</div>
+                                    <div class="modal__code">max-height: 500px;</div>
+                                <div class="modal__sel">}</div>
+                            </div>
+                        </p>
+                    </li>
+                    <li><div class="necessary">max-height</div> - bu elementning eng katta balandligini belgilaydi va element bundan katta bo'la olmaydi.</li>
+                </ul>
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Display xossasiga kirish!</h2>
+                <p class="main__desc"><span>!</span>Odatda elementlar ikki xil turda bo'ladi block va inline:</p>
+                <p class="main__desc"><span>!</span>
+                    Block elementlar turgan joyini kengligini 100% egallaydi va undan keyingi yaratilgan elementlar uni pastidan joylashadi.
+                    Undan tashqari block elementlarga width va height berolamiz!</p>
+                <p class="main__desc"><span>!</span>Block elementlarga misol qilib quyidagilarni keltirishimiz mumkun:</p>
+                <ol class="main__table">
+                    <li><div class="necessary">div</div></li>
+                    <li><div class="necessary">h1 (barcha headinglar)</div></li>
+                    <li><div class="necessary">Section</div></li>
+                    <li><div class="necessary">Main</div></li>
+                    <li><div class="necessary">p</div></li>
+                    <li><div class="necessary">table</div></li>
+                    <li><div class="necessary">ol</div></li>
+                    <li><div class="necessary">ul</div></li>
+                    <li><div class="necessary">li</div></li>
+                    <li><div class="necessary">hr</div></li>
+                    <li><div class="necessary">video</div></li>
+                </ol>
+                <p class="main__desc"><span>!</span> 
+                    Inline Elementlar faqat ichidagi contentining kengligicha joy egallaydi holos va keyingi yaratilgan element yonidan qo'shilib ketaveradi. Inline elementlarga width va height bera olmaymiz!</p>
+                <p class="main__desc"><span>!</span> Inline elementlarga misol qilib quyidagilarni keltirishimiz mumkun:</p>
+                <ol class="main__table">
+                    <li><div class="necessary">span</div></li>
+                    <li><div class="necessary">small</div></li>
+                    <li><div class="necessary">sub</div></li>
+                    <li><div class="necessary">sup</div></li>
+                    <li><div class="necessary">img</div></li>
+                    <li><div class="necessary">br</div></li>
+                    <li><div class="necessary">output</div></li>
+                    <li><div class="necessary">textarea</div></li>
+                    <li><div class="necessary">input</div></li>
+                    <li><div class="necessary">button</div></li>
+                    <li><div class="necessary">i</div></li>
+                    <li><div class="necessary">a</div></li>
+                    <li><div class="necessary">strong</div></li>
+                </ol>
+                <p class="main__desc"><span>!</span> Biz inline elementlarni ham top right bottom va leftdan ham joylashtirmoqchi bo'lsak unda displayni inline-block qiymatidan foydalanamiz!</p>
+                <p class="main__desc"><span>!</span> Undan tashqari biz hohlagan elementni block hohlagan elementni inline qila olamiz.</p>
+                <p class="main__desc"><span>!</span> Displayni yana none qiymati ham bor bunda element html hujjatdan umuman yo'q bo'lib ketadi. </p>
+                <p class="main__desc"><span>!</span> Bundan tashqari yani bir nechta turlari bor</p>
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Texts (tekslar)ga kirish!</h2>
+                <p class="main__desc"><span>!</span> Biz textlarni hohlagancha joylashtirishimiz mumkun, buning uchun textlarga tegishli xossa va qiymatidan foydalanamiz.</p>
+                <ul class="main__table">
+                    <li><div class="necessary">text-align: start</div> - bu tekstlarni boshlanishidan tekislab beradi.</li>
+                    <li><div class="necessary">text-align: center</div> - bu tekstlarni markazga tekislab beradi.</li>
+                    <li><div class="necessary">text-align: end</div> - bu tekstlarni oxiridan tekislab beradi.</li>
+                    <li><div class="necessary">text-align: right</div> - bu tekstlarni o'ng tomondan tekislab beradi.</li>
+                    <li><div class="necessary">text-align: left</div> - bu tekstlarni chap tomondan tekislab beradi.</li>
+                </ul>
+                <p class="main__desc"><span>!</span> Biz undan tashqari elementlarni vertikal ham joylashtira olamiz.
+                Misol uchun bitta parent element bor va uni ichida har xil balandlikga ega elementlar bor,
+                biz ularni hohlasak tepaga hohlasak pastga va hohlasak o'rtadan joylashtira olamiz!</p>
+                <p class="main__desc"><span>!</span> Bunday joylashtirishda vertical align dan foydalanamiz:</p>
+                <ul class="main__table">
+                    <li><div class="necessary">vertical-align: top</div> - bu contentlarni tepadan tekislab beradi.</li>
+                    <li><div class="necessary">vertical-align: middle</div> - bu contentlarni o'rtadan tekislab beradi.</li>
+                    <li><div class="necessary">vertical-align: bottom</div> - bu contentlarni pastdan tekislab beradi.</li>
+                </ul>
+                <div class="ver-a">
+                    <img src="img/modul/ver-a-t.PNG" alt="">
+                    <img src="img/modul/ver-a-m.PNG" alt="">
+                    <img src="img/modul/ver-a-b.PNG" alt="">
+                </div>
+                <br>
+                <h2 class="main__title">Float xossasiga kirish!</h2>
+                <p class="main__desc"><span>!</span> Float bu suzish degani, cssda elementlarni suzub chiqishi uchun ishlatiladi:</p>
+                <ul class="main__table">
+                    <li><div class="necessary">float: left</div> - bu elementni chap tomonga suzduradi.</li>
+                    <li><div class="necessary">float: right</div> - bu elementni o'ng tomonga suzduradi.</li>
+                </ul>
+                <ul class="main__table">
+                    <img src="img/modul/float.png" alt="" class="img b-1-b">
+                </ul>
+                <h2 class="main__title">Text decorationga kirish!</h2>
+                <p class="main__desc"><span>!</span> Text decoration bu textning stilliga javob beradigon xossa.
+                Uning bir nechta qiymatlari bor:</p>
+                <ul class="main__table">
+                    <li><div class="necessary">text-decoration: underline;</div> - bu textni tagiga chizib beradi. <p class="t-d-u">(Tagiga chizilgan matn)</p></li>
+                    <li><div class="necessary">text-decoration: line-through;</div> - bu textni o'rtasidan chizib beradi. <p class="t-d-l-t">(O'rtasidan chizilgan matn)</p></li>
+                    <li><div class="necessary">text-decoration: none;</div> - bu textni hech qanday stilsiz yozib beradi. (Toza matn)
+                    Bu ko'proq a element yani ilova yaratganimizda tagida chiqib qoladigon chiziqni yo'qotish uchun foydalaniladi.</li>
+                </ul>
+            </section>
+            <section class="informs">
+                <h2 class="main__title">Pseudo class ga kirish!</h2>
+                <p class="main__desc"><span>!</span> Pseudo classlar eng foydali va kerakli css imkoniyatidir,
+                bu yordamida cursor borganda holatini o'zgarishi, bosib turganda qanday holatda tutishini belgilab qoyamiz.</p>
+                <ul class="main__table">
+                    <li class="l-none">
+                        <p class="main__desc">
+                            <div class="modal__examp">
+                                <div class="modal__sel">.box:hover {</div>
+                                    <div class="modal__code">color: red;</div>
+                                <div class="modal__sel">}</div>
+                            </div>
+                        </p>
+                    </li>
+                    <li>Bu elementga sichqonchani olib borganingizda bo'ladigon hodisa.</li>
+                    <br>
+                    <li class="l-none">
+                        <p class="main__desc">
+                            <div class="modal__examp">
+                                <div class="modal__sel">.box:active {</div>
+                                    <div class="modal__code">color: green;</div>
+                                <div class="modal__sel">}</div>
+                            </div>
+                        </p>
+                    </li>
+                    <li>Bu elementga bosib turganingizda bo'ladigon hodisa.</li>
+                </ul>
+                <h2 class="main__title">Pseudo class ga kirish!</h2>
+                <p class="main__desc"><span>!</span> Pseudo Elementlar elementga oldingi va keyingi qiymatlarini berishda ishlatilinadi asosan hover bo'lganda yoki active.</p>
+                <p class="main__desx">Biz bitta box ochalik va ichida h1 da qandaydir so'z bo'lsin:</p>
+                <ul class="main__table">
+                    <li class="l-none">
+                        <p class="main__desc">
+                            <div class="modal__examp">
+                                <div class="modal__sel">.box:hover h1::after {</div>
+                                    <div class="modal__code">content: '';</div>
+                                    <div class="modal__code">top: 10px;</div>
+                                    <div class="modal__code">background-color: blue;</div>
+                                <div class="modal__sel">}</div>
+                            </div>
+                        </p>
+                    </li>
+                    <li>Bu elementga sichqonchani olib borganingizda h1 elementi oldin qanday stillga ega bo'lishini belgilaydi.</li>
+                    <br>
+                    <li class="l-none">
+                        <p class="main__desc">
+                            <div class="modal__examp">
+                                <div class="modal__sel">.box:hover h1::before {</div>
+                                    <div class="modal__code">content: '';</div>
+                                    <div class="modal__code">top: 40px;</div>
+                                    <div class="modal__code">background-color: red;</div>
+                                <div class="modal__sel">}</div>
+                            </div>
+                        </p>
+                    </li>
+                    <li>Bu elementga sichqonchani olib borganingizda h1 elementi keyin qanday stillga ega bo'lishini belgilaydi.</li>
                 </ul>
             </section>
         </div>

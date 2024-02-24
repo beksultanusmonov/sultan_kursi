@@ -438,33 +438,77 @@ body {
 
 p.dotted {
   border: 3px dotted grey;
+  color: #333 !important;
+  padding-left: 5px;
 }
 p.dashed {
   border: 3px dashed grey;
+  color: #333 !important;
+  padding-left: 5px;
 }
 p.solid {
   border: 3px solid grey;
+  color: #333 !important;
+  padding-left: 5px;
 }
 p.double {
   border: 3px double grey;
+  color: #333 !important;
+  padding-left: 5px;
 }
 p.groove {
   border: 3px groove grey;
+  color: #333 !important;
+  padding-left: 5px;
 }
 p.ridge {
   border: 3px ridge grey;
+  color: #333 !important;
+  padding-left: 5px;
 }
 p.inset {
   border: 3px inset grey;
+  color: #333 !important;
+  padding-left: 5px;
 }
 p.outset {
   border: 3px outset grey;
+  color: #333 !important;
+  padding-left: 5px;
 }
 p.none {
   border: 3px none grey;
+  color: #333 !important;
+  padding-left: 5px;
 }
 p.hidden {
   border: 3px hidden grey;
+  color: #333 !important;
+  padding-left: 5px;
+}
+
+.ver-a {
+  display: block;
+  padding: 5px;
+}
+.ver-a img {
+  border: 1px solid #333;
+  display: inline-block;
+  margin-right: 10px;
+  max-width: 100%;
+}
+
+.b-1-b {
+  border: 1px solid #333;
+}
+
+p.t-d-u {
+  text-decoration: underline;
+  display: inline-block;
+}
+p.t-d-l-t {
+  text-decoration: line-through;
+  display: inline-block;
 }
 
 /*! media query */
