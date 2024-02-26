@@ -44,6 +44,10 @@ body {
   border: none;
   border-radius: 8px;
 }
+.btn i {
+  color: var(--white-color);
+  margin-right: 10px;
+}
 
 .btn:hover {
   transform: scale(1.08);
