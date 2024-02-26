@@ -67,6 +67,8 @@
                 <li>Display</li>
                 <li>Texts</li>
                 <li>Pseudo class & element</li>
+                <li>Position</li>
+                <li>z-index & overflow</li>
             </ul>
         </div>
         <div class="right">
@@ -186,7 +188,7 @@
                 </ul>
             </section>
             <section class="informs">
-                <h2 class="main__title">Html Elemntlarni formatlash!</h2>
+                <h2 class="main__title">Html Elementlarni formatlash!</h2>
                 <p class="main__desc"><span>!</span> Formatlash elementlari matnning maxsus turlarini ko'rsatish uchun mo'ljallangan:</p>
                 <ul class="main__table">
                     <li><p class="main__desc"><div class="necessary">b</div> - Qalin matn</p></li>
@@ -206,6 +208,9 @@
                 <p class="main__desc"><span>!</span> Formalar asosan royxatda otayotganda, post joylayotganda va bir qancha foydalanuvchilarni malumotlarini olishda foydalaniladi. </p>
                 <p class="main__desc block">Forma elementlariga asosan quyidagilar kiradi:</p>
                 <ul class="main__table">
+                    <li><p class="main__desc"><div class="necessary">form</div> - Forma yatatish uchun</p></li>
+                    <li><p class="main__desc"><div class="necessary">action</div> - Forma submit bo'lganida qaysi joyga olib borishi</p></li>
+                    <li><p class="main__desc"><div class="necessary">label</div> - Inputga qanday malumot kiritilishi kerakligini bildiruvchi element. Odatda qaysi inputga tegishli bo'lsa for attributega shu inputning idsidagi qiymati yoziladi!</p></li>
                     <li><p class="main__desc"><div class="necessary">input</div> - Malumot olish uchun</p></li>
                     <li><p class="main__desc"><div class="necessary">button</div> - Malumot jonatish uchun</p></li>
                 </ul>
@@ -258,7 +263,7 @@
                     <li><p class="main__desc"><div class="necessary">select</div> - bu tanlsh uchun dropdawn yaratib beradi.</p></li>
                     <li><p class="main__desc"><div class="necessary">option</div> - Bu tanlanuvchi element yaratib beradi.</p></li>
                 </ol>
-                <p class="main__desc"><span>!</span> Agar biz biron option ga selected atributini bersak shu option avtomatiski tanlangan boladi.</p>
+                <p class="main__desc"><span>!</span> Agar biz biron option ga selected attributini bersak shu option avtomatiski tanlangan boladi.</p>
                 <p class="main__desc"><span>!</span> Agar hech qaysi optionga selected artibuti berilmagan bo'lsa, u holda avtomatiskiy birinchi option ni tanlab oladi.</p>
             </section>
             <!-- css sections -->
@@ -880,7 +885,7 @@
                 </ul>
                 <h2 class="main__title">Pseudo class ga kirish!</h2>
                 <p class="main__desc"><span>!</span> Pseudo Elementlar elementga oldingi va keyingi qiymatlarini berishda ishlatilinadi asosan hover bo'lganda yoki active.</p>
-                <p class="main__desx">Biz bitta box ochalik va ichida h1 da qandaydir so'z bo'lsin:</p>
+                <p class="main__desc">Biz bitta box ochalik va ichida h1 da qandaydir so'z bo'lsin:</p>
                 <ul class="main__table">
                     <li class="l-none">
                         <p class="main__desc">
@@ -908,6 +913,110 @@
                     </li>
                     <li>Bu elementga sichqonchani olib borganingizda h1 elementi keyin qanday stillga ega bo'lishini belgilaydi.</li>
                 </ul>
+            </section>
+            <section class="informs">
+                <h2 class="main__table">Position (Joylashuv)ga kirish!</h2>
+                <p class="main__desc"><span>!</span> Htmlda elementlar chapdan o'ngga yoki tepadan pastga joylashib keladi.
+                Misol uchun block element yaratsak tepadan pastga inline element yaratsak chapdan o'ngga qarab joylashadi.</p>
+                <p class="main__desc"><span>!</span> Har bir elementning 4ta muhum xossasi bor: top, right, bottom va left.</p>
+                <ul class="main__table">
+                    <li><div class="necessary">Top</div> - Bu elementning tepadan joylashishiga javob beradi.</li>
+                    <li><div class="necessary">Right</div> - Bu elementning o'ngdan joylashishiga javob beradi.</li>
+                    <li><div class="necessary">Bottom</div> - Bu elementning pastdan joylashishiga javob beradi.</li>
+                    <li><div class="necessary">Left</div> - Bu elementning chapdan joylashishiga javob beradi.</li>
+                </ul>
+                <p class="main__desc"><span>!</span> Bundan tashqari bularni margin va padding da ham qo'llash mumkun:</p>
+                <ul class="main__table">
+                    <li><div class="necessary">margin-top</div> - Bu elementning tashqari tepadan joylashishiga javob beradi.</li>
+                    <li><div class="necessary">margin-right</div> - Bu elementning tashqari o'ngdan joylashishiga javob beradi.</li>
+                    <li><div class="necessary">margin-bottom</div> - Bu elementning tashqari pastdan joylashishiga javob beradi.</li>
+                    <li><div class="necessary">margin-left</div> - Bu elementning tashqari chapdan joylashishiga javob beradi.</li>
+                    <br>
+                    <li><div class="necessary">padding-top</div> - Bu elementning ichkari tepadan joylashishiga javob beradi.</li>
+                    <li><div class="necessary">padding-right</div> - Bu elementning ichkari o'ngdan joylashishiga javob beradi.</li>
+                    <li><div class="necessary">padding-bottom</div> - Bu elementning ichkari pastdan joylashishiga javob beradi.</li>
+                    <li><div class="necessary">padding-left</div> - Bu elementning ichkari chapdan joylashishiga javob beradi.</li>
+                </ul>
+                <p class="main__desc"><span>!</span> Positionga kelsak, Position qaysi joyga nisbatan joylashishiga javob beradi.</p>
+                <p class="main__desc block">Positionning 5ta qiymati mavjud</p>
+                <ul class="main__table">
+                    <li><div class="necessary">static</div> - bu qat'iy qiymati. Odatda HTMLda har bir element shu qiymatda bo'ladi. Bu qiymatda biz top right left va bottom xossalarini ishlata olmaymiz!</li>
+                    <li><div class="necessary">relative</div> - bu o'ziga nisbatan nisbatan joylashishini belgilaydi.</li>
+                    <li><div class="necessary">absolute</div> - bu parent elementga nisbatan nisbatan joylashishini belgilaydi. Agar absolute qiymatli elementning ichidan yana absolute qiymatga ega element bo'lsa shu elementga parent element hisoblanadi!</li>
+                    <li><div class="necessary">fixed</div> - bu o'ziga nisbatan joylashishini belgilay va scroll qilinganda joyidan jilmaydi.</li>
+                    <li><div class="necessary">sticky</div> - bu relative va fixed xossalarini o'z ichiga olgan xossa hisoblanadi.</li>
+                </ul>
+            </section>
+            <section class="informs">
+                <h2 class="main__title">z-index va overflow ga kirish!</h2>
+                <h2 class="main__title">z-index !</h2>
+                <p class="main__desc"><span>!</span> z-index bu elementning boshqa element ustidan ko'rinishi uchun ishlatilinadi.
+                Misol uchun qaysi elementning z-index katta bo'lsa shu element eng ustida joylashadi.</p>
+                <ul class="main__table">
+                    <li class="l-none">
+                        <p class="main__desc">
+                            <div class="modal__examp">
+                                <div class="modal__sel">.box-1 {</div>
+                                    <div class="modal__code">z-index: 1;</div>
+                                <div class="modal__sel">}</div>
+                                <br>
+                                <div class="modal__sel">.box-2 {</div>
+                                    <div class="modal__code">z-index: 2;</div>
+                                <div class="modal__sel">}</div>
+                            </div>
+                        </p>
+                    </li>
+                </ul>
+                <h2 class="main__title">Overflow !</h2>
+                <p class="main__desc"><span>!</span> Odatda biz elementlarni joylashtirganimizda ularni parent elementdan tashqarida ko'rinmasligini
+                    yoki oshib qolgan qismini surish orqali ko'rinishini istaymiz bunda bizga overflow yordamga keladi.</p>
+                    <p class="main__desc block">Odatda 3ta asosiy xossasi bor:</p>
+                    <ul class="main__table">
+                        <li><div class="necessary">overflow</div> - bu elementning ichidagi oshgan qismiga javob beradi.</li>
+                        <li class="l-none">
+                            <p class="main__desc">
+                                <div class="modal__examp">
+                                    <div class="modal__sel">.box {</div>
+                                        <div class="modal__code">overflow: hidden;</div>
+                                    <div class="modal__sel">}</div>
+                                </div>
+                            </p>
+                        </li>
+                        <li><div class="necessary">overflow-x</div> - bu elementning ichidagi oshgan qismini x o'qi bo'ylab (garizontal) surilishiga javob beradi.</li>
+                        <li class="l-none">
+                            <p class="main__desc">
+                                <div class="modal__examp">
+                                    <div class="modal__sel">.box {</div>
+                                        <div class="modal__code">overflow-x: auto;</div>
+                                    <div class="modal__sel">}</div>
+                                </div>
+                            </p>
+                        </li>
+                        <li><div class="necessary">overflow-y</div> - bu elementning ichidagi oshgan qismini y o'qi bo'ylab (vertical) surilishiga javob beradi.</li>
+                        <li class="l-none">
+                            <p class="main__desc">
+                                <div class="modal__examp">
+                                    <div class="modal__sel">.box {</div>
+                                        <div class="modal__code">overflow-x: auto;</div>
+                                    <div class="modal__sel">}</div>
+                                </div>
+                            </p>
+                        </li>
+                    </ul>
+                    <p class="main__desc"><span>!</span> Bizda overflowdan foydalanganimizda chekka va pastdan scroll bar hosil bo'ladi,
+                    uni yo'qotish uchun webkit scrollbardan foydalanamiz:</p>
+                    <u class="main__table">
+                        <li class="l-none">
+                            <p class="main__desc">
+                                <div class="modal__examp">
+                                    <div class="modal__sel">::-webkit-scrollbar {</div>
+                                        <div class="modal__code">width: 0;</div>
+                                        <div class="modal__code">height: 0;</div>
+                                    <div class="modal__sel">}</div>
+                                </div>
+                            </p>
+                        </li>
+                    </u>
             </section>
         </div>
     </main>
